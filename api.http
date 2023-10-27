@@ -1,0 +1,41 @@
+### Recuperar todas las peliculas
+GET  http://localhost:3000/
+
+### Recuperar todas las tracks
+GET  http://localhost:3000/api/tracks
+
+### Crear un track
+POST  http://localhost:3000/api/tracks
+Content-Type: application/json
+
+{
+  "name": "Allen",
+  "album": "Album",
+  "cover": "http://tttt.com",
+  "artist": {
+    "name": "Allen",
+    "nickname": "frozst",
+    "nationality": "BO"
+  },
+  "duration": {
+    "start": 1,
+    "end": 0
+  },
+  "mediaId": "621e7499a1f699063f5114bc"
+}
+
+### Recuperar una pelicula por id
+### Crear un nuevo recurso
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "name": "",
+  "year": 1997,
+  "poster": "https://img.fruugo.com/?.jpg",
+  "director": "",
+  "genre": [
+    "",
+    ""
+  ]
+}
