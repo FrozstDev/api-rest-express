@@ -7,4 +7,8 @@ const TrackController = require('../controllers/tracks')
 router.get('/', TrackController.getAll)
 router.post('/', TrackController.create)
 
+router.get('/:id', TrackController.getOne)
+router.put('/:id', TrackController.update)
+router.delete('/:id', TrackController.delete)
+
 module.exports = router

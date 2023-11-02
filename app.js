@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 5000
 app.disable('x-powered-by') // ? disable x-powered-by: Express from headers
 app.use(cors()) // ? cors es un plugin para el servidor, que nos permite evitar el error de origen cruzado de navegadores
 app.use(express.json())
-app.use(express.static('storage'))
 
 /**
  * Routes

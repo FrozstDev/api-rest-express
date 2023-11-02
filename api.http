@@ -1,5 +1,5 @@
 ### Recuperar todas las peliculas
-GET  http://localhost:3000/
+GET  http://localhost:3000/api
 
 ### Recuperar todas las tracks
 GET  http://localhost:3000/api/tracks
@@ -24,18 +24,28 @@ Content-Type: application/json
   "mediaId": "621e7499a1f699063f5114bc"
 }
 
-### Recuperar una pelicula por id
-### Crear un nuevo recurso
-POST http://localhost:3000/movies
+### Recuperar un track por id
+GET  http://localhost:3000/api/tracks/653ae6dfaefe88cfa970e09a
+
+### Actualizar un track
+PUT  http://localhost:3000/api/tracks/653ae6dfaefe88cfa970e09a
 Content-Type: application/json
 
 {
-  "name": "",
-  "year": 1997,
-  "poster": "https://img.fruugo.com/?.jpg",
-  "director": "",
-  "genre": [
-    "",
-    ""
-  ]
+  "name": "Nathan",
+  "album": "Album B",
+  "cover": "http://zzzz.com",
+  "artist": {
+    "name": "Nathan",
+    "nickname": "TheFrozst",
+    "nationality": "ESP"
+  },
+  "duration": {
+    "start": 1,
+    "end": 0
+  },
+  "mediaId": "621e7499a1f699063f5114bc"
 }
+
+### Eliminar un track por id
+DELETE  http://localhost:3000/api/tracks/6542f198e74ba54d211bb7a4
